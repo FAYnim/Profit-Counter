@@ -1,0 +1,71 @@
+body {
+    background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: linear-gradient(135deg, #444, #333);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+form input, form select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+    background: #333;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    background: #444;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #0056b3, #007bff);
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background: #333;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
