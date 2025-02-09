@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Profit Counter</h1>
+        <form id="profitForm">
+            <label for="price">Price:</label>
+            <input type="number" id="price" placeholder="Enter the price" required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" placeholder="Enter the quantity" required>
+
+            <label for="profitPercent">Profit Percentage (%):</label>
+            <input type="number" id="profitPercent" step="any" placeholder="Enter the profit percentage" required>
+
+            <label for="type">Transaction Type:</label>
+            <select id="type">
+                <option value="sell">Sell</option>
+                <option value="buy">Buy</option>
+            </select>
+
+            <button type="submit">Calculate Profit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
